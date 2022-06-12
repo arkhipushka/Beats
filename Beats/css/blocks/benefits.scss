@@ -1,0 +1,41 @@
+
+.benefits__list {
+    display: flex;
+    color: #666;
+  }
+  
+  .benefits__item{
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before{
+      content: url(../../img/decor/shape.svg);
+      position: absolute;
+      top: 40px;
+      right: 0;
+      transform: translate(50%, 50%);
+    }
+  
+    &:first-child{
+      padding-left: 0;
+    }
+
+    &:last-child{
+        padding-right: 0;
+        &:before{
+          display: none;
+        }
+    }
+  
+  
+  }
+
+  .benefits-section{
+    &:before{
+        content: url(../../img/decor/triangle.svg);
+        position: absolute;
+        top: 1885px;
+        left: 10%;
+    }
+}

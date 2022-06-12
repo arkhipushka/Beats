@@ -1,0 +1,23 @@
+.features__list{
+    display: flex;
+}
+
+.features__item{
+    margin-right: 22px;
+    display: flex; 
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.feature__icon{
+    display: flex;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.feature__text{
+    font-family: 'Play';
+    font-size: 16px;
+    max-width: 95px;
+}

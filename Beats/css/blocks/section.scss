@@ -1,0 +1,29 @@
+.section{
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.section__title{
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.order-section{
+    background: #181818;
+    background: url(../../img/order-bg.svg) center center no-repeat;
+    background-size: 100%;
+    color: #fff;
+}
+
+
+
+
