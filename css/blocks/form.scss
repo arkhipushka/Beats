@@ -1,0 +1,119 @@
+.form{
+    display: flex;
+    @include tablets{
+        flex-direction: column;
+        padding: 0 17%;
+
+    }
+    @include phones{
+        padding: 0 0;
+
+    }
+}
+
+.form__col{
+    flex: 1;
+    margin-right: rem(30px);
+
+    &:last-child{
+        .form__row{
+            .form__block{
+                margin-right: 0;
+            }
+        }
+        margin-right: 0;
+    }
+    @include tablets{
+        margin-right: 0;
+    }
+
+}
+
+.form__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(14px);
+}
+
+.form__block{
+    flex: 1;
+    margin-right: rem(15px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+
+
+.form__input{
+    width: 100%;
+    border: none;
+    padding: rem(18px) rem(12px);
+    border: solid rem(3px) transparent;
+    border-radius: rem(4px);
+
+
+    &:focus{
+        border-color: #E01F3D;
+        outline: none;
+    }
+
+    &--textarea {
+        height: rem(160px);
+        resize: none;
+        margin-bottom: rem(30px);
+
+        @include tablets{
+            height: rem(80px);
+            margin-right: rem(100px);
+    
+        }
+    }
+
+    @include tablets{
+
+        padding: rem(8px) rem(12px);
+
+    }
+}
+
+.form__controls{
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child{
+        margin-bottom: rem(20px);
+    }
+
+    @include tablets{
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    @include phones{
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+}
+
+.form__buttons{
+    @include tablets{
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

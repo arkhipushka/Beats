@@ -1,0 +1,6 @@
+.hero {
+  background: url(../../img/hero-img1.svg) left 80% center no-repeat;
+  background-color: #F5F5F5;
+  height: 100vh;
+  min-height: 650px;
+}

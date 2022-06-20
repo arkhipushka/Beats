@@ -1,0 +1,40 @@
+@import url(../layout/base.css);
+@import url(../layout/normalize.css);
+
+$containerWidth: 940px;
+$baseFontSize: 18px;
+$z-fixed-menu: 100;
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "media";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&family=Play:wght@400;700&display=swap');
+
+@import "../layout/layout";
+@import "hero";
+@import "header";
+@import "features";
+@import "button";
+@import "section";
+@import "headline";
+@import "benefits";
+@import "benefit";
+@import "reviews";
+@import "interactive-avatar";
+@import "form";
+@import "radio";
+@import "fixed-menu";
+@import "hamburger";
+@import "map";
+@import "footer";
+@import "socials";
+@import "contacts";
+
+.svg__icon{
+    height: 40px;
+}
+
+
