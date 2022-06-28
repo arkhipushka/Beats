@@ -1,0 +1,50 @@
+.benefit {
+    text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    .benefit {
+      text-align: start;
+    }
+  }
+  
+  .benefit__img {
+    margin-bottom: 1.3888888889rem;
+  }
+  @media screen and (max-width: 480px) {
+    .benefit__img {
+      margin-bottom: 0;
+      margin-right: 0.6666666667rem;
+    }
+  }
+  
+  .benefit__desc {
+    font-family: "Play";
+  }
+  
+  .benefit__img-wrapper {
+    display: inline-block;
+    width: 7.1111111111rem;
+    height: 7.1111111111rem;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .benefit__icon {
+    width: 3.8888888889rem;
+    height: 3.8888888889rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .benefit__title {
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 1.3333333333rem;
+    color: #292929;
+    margin-bottom: 0.2777777778rem;
+  }

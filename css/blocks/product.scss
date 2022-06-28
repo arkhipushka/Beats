@@ -1,0 +1,132 @@
+.product__container {
+    display: flex;
+  
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .product__specifications {
+    margin-bottom: rem(20px);
+  
+    @include tablets {
+      display: none;
+    }
+  }
+  
+  .product__col {
+    margin-right: rem(50px);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    @include tablets {
+      width: 80%;
+      margin-right: 0;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: rem(60px);
+      text-align: center;
+  
+      &:last-child {
+        width: 40%;
+        margin-bottom: 0;
+        @include tablets{
+            width: 80%;
+        }
+      }
+    }
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .product__image {
+
+
+    @include tablets {
+      height: rem(300px);
+    }
+  
+  }
+  
+
+  .product__title {
+    font-family: 'Play';
+    font-size: rem(36px);
+    font-weight: bold;
+    margin-bottom: rem(24px);
+    color: #0d0d0d;
+    text-transform: uppercase;
+  
+    @include tablets {
+        font-size: rem(28px);
+    }
+  
+    @include phones {
+      padding: 0;
+      font-size: rem(28px);
+    }
+  }
+  
+  .product__text {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16px);
+    margin-bottom: rem(25px);
+  }
+  
+  .product__values-rub-sign {
+    height: rem(30px);
+    width: rem(20px);
+    margin-left: rem(9px);
+    margin-top: rem(13px);
+  }
+  
+  .product__values-row {
+    display: flex;
+    margin-bottom: rem(24px);
+  
+    &:first-child{
+        .product__values-block{
+            &:first-child{
+                margin-right: rem(50px);
+            } 
+        }
+    }
+
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include tablets {
+        justify-content: center;
+    }
+
+  }
+  
+  .product__values-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Play';
+    &:first-child {
+      margin-right: rem(25px);
+    }
+  }
+  
+  .product__values-amount {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .product__values-rub {
+    color: #151515;
+    font-size: rem(36px);
+    display: flex;
+    align-items: center;
+  }
